@@ -1,11 +1,13 @@
 import React from 'react';
 import { InfoSection } from '../../components';
-import { homeObj } from './Data';
+import { siteData, SiteDataInterface } from './Data';
 
 const Home = () => {
 	return (
 		<React.Fragment>
-			<InfoSection {...homeObj} />
+			{siteData.map((sectionDetail: SiteDataInterface, index) => {
+				return <InfoSection key={`section${index}`} {...sectionDetail} />;
+			})}
 		</React.Fragment>
 	);
 };

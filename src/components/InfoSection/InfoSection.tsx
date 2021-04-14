@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Container } from '../../globalStyle';
-import { InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle } from './InfoSection.elements';
-import { DataInterface } from '../../pages/HomePage/Data';
+import { InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img } from './InfoSection.elements';
+import { SiteDataInterface } from '../../pages/HomePage/Data';
 
-const InfoSection: React.FC<DataInterface> = ({
+const InfoSection: React.FC<SiteDataInterface> = ({
 	lightBg,
 	imgStart,
 	lightTopLine,
@@ -14,7 +14,8 @@ const InfoSection: React.FC<DataInterface> = ({
 	lightTextDesc,
 	description,
 	primary,
-	buttonLabel
+	buttonLabel,
+    img,
 }) => {
 	return (
 		<React.Fragment>
@@ -33,6 +34,11 @@ const InfoSection: React.FC<DataInterface> = ({
 								</Link>
 							</TextWrapper>
 						</InfoColumn>
+                        <InfoColumn>
+                            <ImgWrapper start={img?.start}>
+                                <Img src={img?.url?.default} alt={img?.alt} />
+                            </ImgWrapper>
+                        </InfoColumn>
 					</InfoRow>
 				</Container>
 			</InfoSec>

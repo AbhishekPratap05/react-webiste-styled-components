@@ -94,3 +94,24 @@ font-size:18px;
 line-height:24px;
 color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}
 `;
+
+interface ImgWrapperInterface {
+	start?: string;
+}
+export const ImgWrapper =
+	styled.div <
+	ImgWrapperInterface >
+	`
+max-width:555px;
+display:flex;
+justify-content:${({ start }) => (start ? 'flex-start' : 'flex-end')}
+`;
+
+export const Img = styled.img`
+	padding-right: 0;
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	max-height: 500px;
+`;
