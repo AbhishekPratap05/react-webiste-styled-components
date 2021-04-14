@@ -21,9 +21,6 @@ justify-content: space-between;
 height: 80px;
 
 ${Container}
-margin-left: 10%;
-padding-left:10%;
-padding-right:0;
 `;
 
 export const NavLogo = styled(Link)`
