@@ -64,7 +64,7 @@ const Navbar = () => {
 				<NavbarContainer>
 					<NavLogo to="/">
 						<NavIcon />
-						HOME
+						BRAND
 					</NavLogo>
 					<MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
 					<NavMenu clickValue={click} onClick={handleClick}>

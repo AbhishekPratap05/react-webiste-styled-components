@@ -1,6 +1,16 @@
 import React from 'react';
+import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Button } from '../../globalStyle';
-import { FooterLinksItems } from './Footer.elements';
+import {
+	FooterLinksItems,
+	SocialIcon,
+	SocialIconLink,
+	SocialIcons,
+	SocialLogo,
+	SocialMedia,
+	SocialMediaWrap,
+	WebsiteRights
+} from './Footer.elements';
 import {
 	FooterContainer,
 	FooterLink,
@@ -140,6 +150,32 @@ const Footer = () => {
 					})}
 				</FooterLinksWrapper>
 			</FooterLinksContainer>
+			<SocialMedia>
+				<SocialMediaWrap>
+					<SocialLogo to="/">
+						<SocialIcon />
+						BRAND
+					</SocialLogo>
+					<WebsiteRights>© BRAND 2021</WebsiteRights>
+					<SocialIcons>
+						<SocialIconLink href="/" target="_blank" aria-label="Facebook">
+							<FaFacebook />
+						</SocialIconLink>
+						<SocialIconLink href="/" target="_blank" aria-label="Instagram">
+							<FaInstagram />
+						</SocialIconLink>
+						<SocialIconLink href="/" target="_blank" aria-label="Youtube">
+							<FaYoutube />
+						</SocialIconLink>
+						<SocialIconLink href="/" target="_blank" aria-label="Twitter">
+							<FaTwitter />
+						</SocialIconLink>
+						<SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+							<FaLinkedin />
+						</SocialIconLink>
+					</SocialIcons>
+				</SocialMediaWrap>
+			</SocialMedia>
 		</FooterContainer>
 	);
 };
