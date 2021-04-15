@@ -9,6 +9,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React Router to navigate between sections 🔗.
 - Responsive design 📱. 
 - Data file to edit all the content and look at one place 📝.
+
+
+>Note to change/edit website:
+> - To change website name and footer details edit WebsiteData.ts
+> - To add more sections to the home edit Data.ts in Pages/Homepage.
+> - To add more routing (Pages) like **About Us** add folder in pages similar to HomePage and copy paste the content for it(both Data file and component file). Later edit the App.tsx by following the instructions provided there. *will try to improve this to make is more hassle free*
+> - To edit the footer URL and add/remove social media links go to Footer.tsx and change/edit the footerLinks object, and for social media directly add to the link at the bottom of the page. 
+
 ## Available Scripts
 
 In the project directory, you can run:

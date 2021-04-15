@@ -13,6 +13,8 @@ function App() {
 			<Navbar />
 			<Switch>
 				<Route path="/" exact component={Home} />
+				{/* Add more pages and routing here similar to Home, 
+				make sure to add same path to what you have entered in NavMenuItems file in Navbar.tsx*/}
 			</Switch>
 			<Footer />
 		</Router>
