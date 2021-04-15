@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface InfoSecPropsInterface {
-	lightBg?: boolean;
+	lightBg: boolean;
 }
 
 export const InfoSec =
@@ -14,7 +14,7 @@ background:${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
 `;
 
 interface InfoRowInterface {
-	imgStart?: boolean;
+	imgStart: boolean;
 }
 export const InfoRow =
 	styled.div <
@@ -54,7 +54,7 @@ export const TextWrapper = styled.div`
 `;
 
 interface TopLineInterface {
-	lightTopLine?: boolean;
+	lightTopLine: boolean;
 }
 export const TopLine =
 	styled.div <
@@ -69,7 +69,7 @@ margin-bottom: 16px;
 `;
 
 interface HeadingInterface {
-	lightText?: boolean;
+	lightText: boolean;
 }
 export const Heading =
 	styled.h1 <
@@ -82,7 +82,7 @@ color:${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
 `;
 
 interface SubtitleInterface {
-	lightTextDesc?: boolean;
+	lightTextDesc: boolean;
 }
 export const Subtitle =
 	styled.p <
@@ -96,7 +96,7 @@ color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}
 `;
 
 interface ImgWrapperInterface {
-	start?: boolean;
+	start: boolean;
 }
 export const ImgWrapper =
 	styled.div <

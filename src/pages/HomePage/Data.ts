@@ -1,14 +1,14 @@
 export interface SiteDataInterface {
 	lightBg: boolean;
-	imgStart?: boolean;
-	lightTopLine?: boolean;
-	topLine?: string;
-	lightText?: boolean;
-	headline?: string;
-	lightTextDesc?: boolean;
-	description?: string;
-	primary?: boolean;
-	buttonLabel?: string;
+	imgStart: boolean;
+	lightTopLine: boolean;
+	topLine: string;
+	lightText: boolean;
+	headline: string;
+	lightTextDesc: boolean;
+	description: string;
+	primary: boolean;
+	buttonLabel: string;
 	img: imgInterface;
 }
 
