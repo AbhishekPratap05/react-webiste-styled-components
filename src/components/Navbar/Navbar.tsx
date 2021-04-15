@@ -49,6 +49,10 @@ const Navbar = () => {
 		setClick(!click);
 	};
 
+	const closeMobileMenu = () => {
+		setClick(false);
+	};
+
 	const showButton = () => {
 		window.innerWidth <= 960 ? setButton(false) : setButton(true);
 	};
@@ -62,7 +66,7 @@ const Navbar = () => {
 		<IconContext.Provider value={{ color: '#fff' }}>
 			<Nav>
 				<NavbarContainer>
-					<NavLogo to="/">
+					<NavLogo to="/" onClick={closeMobileMenu}>
 						<NavIcon />
 						BRAND
 					</NavLogo>
