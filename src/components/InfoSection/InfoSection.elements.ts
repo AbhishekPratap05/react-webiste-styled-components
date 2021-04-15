@@ -14,7 +14,7 @@ background:${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
 `;
 
 interface InfoRowInterface {
-	imgStart?: string;
+	imgStart?: boolean;
 }
 export const InfoRow =
 	styled.div <
@@ -96,7 +96,7 @@ color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')}
 `;
 
 interface ImgWrapperInterface {
-	start?: string;
+	start?: boolean;
 }
 export const ImgWrapper =
 	styled.div <

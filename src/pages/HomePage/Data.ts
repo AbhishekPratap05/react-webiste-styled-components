@@ -1,6 +1,6 @@
 export interface SiteDataInterface {
 	lightBg: boolean;
-	imgStart?: string;
+	imgStart?: boolean;
 	lightTopLine?: boolean;
 	topLine?: string;
 	lightText?: boolean;
@@ -9,19 +9,19 @@ export interface SiteDataInterface {
 	description?: string;
 	primary?: boolean;
 	buttonLabel?: string;
-	img?: imgInterface;
+	img: imgInterface;
 }
 
 interface imgInterface {
 	url: any;
-	start: string;
+	start: boolean;
 	alt: string;
 }
 
 export const siteData: SiteDataInterface[] = [
 	{
 		lightBg: false,
-		imgStart: '',
+		imgStart: false,
 		lightTopLine: true,
 		topLine: 'What is Lorem Ipsum?',
 		lightText: true,
@@ -33,12 +33,12 @@ export const siteData: SiteDataInterface[] = [
 		img: {
 			alt: 'image',
 			url: require('../../images/svg-1.svg'),
-			start: ''
+			start: false
 		}
 	},
 	{
 		lightBg: true,
-		imgStart: 'start',
+		imgStart: true,
 		lightTopLine: false,
 		topLine: 'What is Lorem Ipsum?',
 		lightText: false,
@@ -50,12 +50,12 @@ export const siteData: SiteDataInterface[] = [
 		img: {
 			alt: 'image',
 			url: require('../../images/bird.jpg'),
-			start: 'true'
+			start: true
 		}
 	},
 	{
 		lightBg: false,
-		imgStart: '',
+		imgStart: false,
 		lightTopLine: true,
 		topLine: 'What is Lorem Ipsum?',
 		lightText: true,
@@ -67,12 +67,12 @@ export const siteData: SiteDataInterface[] = [
 		img: {
 			alt: 'image',
 			url: require('../../images/svg-2.svg'),
-			start: ''
+			start: false
 		}
 	},
 	{
 		lightBg: true,
-		imgStart: 'start',
+		imgStart: true,
 		lightTopLine: false,
 		topLine: 'What is Lorem Ipsum?',
 		lightText: false,
@@ -84,7 +84,7 @@ export const siteData: SiteDataInterface[] = [
 		img: {
 			alt: 'image',
 			url: require('../../images/svg-3.svg'),
-			start: 'true'
+			start: true
 		}
 	}
 ];
