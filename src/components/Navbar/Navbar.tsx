@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../globalStyle';
+import { WEBSITE_NAME } from '../../WebsiteData';
 import {
 	MobileIcon,
 	Nav,
@@ -68,7 +69,7 @@ const Navbar = () => {
 				<NavbarContainer>
 					<NavLogo to="/" onClick={closeMobileMenu}>
 						<NavIcon />
-						BRAND
+						{WEBSITE_NAME}
 					</NavLogo>
 					<MobileIcon onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</MobileIcon>
 					<NavMenu clickValue={click} onClick={handleClick}>

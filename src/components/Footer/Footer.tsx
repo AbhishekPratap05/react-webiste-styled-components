@@ -2,6 +2,13 @@ import React from 'react';
 import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Button } from '../../globalStyle';
 import {
+	FOOTER_SUB_HEADING,
+	FOOTER_SUB_TEXT,
+	FOOTER_BUTTON_TEXT,
+	WEBSITE_NAME,
+	WEBSITE_RIGHTS
+} from '../../WebsiteData';
+import {
 	FooterLinksItems,
 	SocialIcon,
 	SocialIconLink,
@@ -125,11 +132,11 @@ const Footer = () => {
 	return (
 		<FooterContainer>
 			<FooterSubscription>
-				<FooterSubHeading>Get membership to receive the latest news and trends</FooterSubHeading>
-				<FooterSubText>You can unsubscribe at any time.</FooterSubText>
+				<FooterSubHeading>{FOOTER_SUB_HEADING}</FooterSubHeading>
+				<FooterSubText>{FOOTER_SUB_TEXT}</FooterSubText>
 				<Form>
 					<FormInput name="email" type="email" placeholder="yor email" />
-					<Button fontBig>Subscribe</Button>
+					<Button fontBig>{FOOTER_BUTTON_TEXT}</Button>
 				</Form>
 			</FooterSubscription>
 			<FooterLinksContainer>
@@ -154,9 +161,9 @@ const Footer = () => {
 				<SocialMediaWrap>
 					<SocialLogo to="/">
 						<SocialIcon />
-						BRAND
+						{WEBSITE_NAME}
 					</SocialLogo>
-					<WebsiteRights>© BRAND 2021</WebsiteRights>
+					<WebsiteRights>{WEBSITE_RIGHTS}</WebsiteRights>
 					<SocialIcons>
 						<SocialIconLink href="/" target="_blank" aria-label="Facebook">
 							<FaFacebook />
